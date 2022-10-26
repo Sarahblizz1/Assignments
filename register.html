@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration page</title>
+    
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: content-box;
+        }
+        
+        
+        body{
+            width: 100%;
+            height: 700px;
+            padding: 10px;
+            margin: 10px;
+            background: whitesmoke;
+            overflow: hidden;
+            border-radius: 20px;
+           
+        }
+        
+        #main{
+          border:none;
+          margin-top: 30px;
+          margin-bottom: 10px;
+          
+        }
+        
+        .aside{
+          border:none;
+          margin-top: 10px;
+          
+        }
+        
+        a{
+          color: green;
+          font-weight: bold;
+        }
+        
+        a:hover{
+          background: darkblue;
+        }
+        a:visited{
+          color: blueviolet;
+        }
+        h2{
+             color: green;
+	           font-size: 3em;
+	           justify-content: center;
+	           display: flex;
+	           margin-top: 20px;
+	           font-weight: bold;
+	           cursor: pointer;
+        }
+        
+        p{
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        label{
+            width: 80%;
+            display: flex;
+            margin:1px auto;
+        }
+        
+        input, select{
+            width: 80%;
+            padding: 15px;
+            margin: 2px auto;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            outline: none;
+            border-radius: 10px;
+            border: none;
+            background-color: #e0dede;
+        }
+        
+        button{
+	       width: 60%;
+	       height: 40px;
+	       margin: 10px auto;
+	       justify-content: center;
+	       display: block;
+	       color: white;
+         background: green;
+	       font-size: 1em;
+	       font-weight: bold;
+	       margin-top: 10px;
+	       outline: none;
+	       border: none;
+	       border-radius: 5px;
+	       cursor: pointer;
+         }
+         
+         button:hover{
+         background: #6d44b8;
+         }
+       </style> 
+       </head>
+       
+       <body>
+ 
+ <form action="my.html">
+   <header>
+        <h2>Create an account</h2>
+        <p>Already have an account?<a href="login.html">Login</a></p>
+    </header>
+    
+    <main>
+   <div id="main">
+        <label for="firstname">Name:</label>                
+        <input type="fname" name="fname" placeholder="First Name:">
+        
+        <label for="last name">Last Name:</label>            
+        <input type="lastname" name="lastname" placeholder="Last Name:">
+        
+        <label for="Phone number"> Phone Number:</label>      
+        <input type="number" value="number" id="number" placeholder="Phone Number:">
+     
+        <label for="Email">Email:</label>
+       <input type="Email" value="Email" id="" placeholder="Email:">
+       
+        <label for="gender">Select Gender: </label>
+      <select name="gender" id="gender">
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="others">others</option>
+        </select>
+                   
+        <label for="date of birth">Date of birth:</label>
+        <input type="date" value="DOB" placeholder="choose date of birth">
+
+        <label for="color">Favorite color:</label>
+        <input type="color" value="color" id="color">
+        
+        <button type="submit" value="Submit">Sign up</button> 
+        </main>
+    </form>
+    </div>
+</body>
+</html>
